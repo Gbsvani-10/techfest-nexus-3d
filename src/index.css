@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Orbitron", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    background-color: #040714;
+    color: #f1f5f9;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: #040714;
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* Custom subtle dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040714;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.25);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.45);
+}
+
+/* Solid translucent dark sci-fi panels (zero backdrop-filter to preserve WebGL framerate) */
+.nexus-panel {
+  background-color: rgba(6, 11, 28, 0.88);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  transition: border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+[data-intense="true"] .nexus-panel {
+  border-color: rgba(34, 211, 238, 0.48);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.55),
+    0 0 22px rgba(34, 211, 238, 0.18);
+}
+
+.nexus-panel-subtle {
+  background-color: rgba(8, 14, 34, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

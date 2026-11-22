@@ -1,0 +1,6 @@
+{
+  "name": "TECHFEST NEXUS – Enter the Future",
+  "description": "An immersive real-time 3D interactive technology festival experience featuring a futuristic city world, interactive 3D events, a 6-DOF robotics innovation lab, 3D achievements, and an interactive gallery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
