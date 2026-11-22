@@ -110,7 +110,7 @@ Follow these steps to run the project locally.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/techfest-nexus-3d.git
+git clone https://github.com/Gbsvani-10/techfest-nexus-3d.git
 ```
 
 ### 2. Navigate to the project directory
